@@ -1,0 +1,37 @@
+<?php
+  include_once 'header.php';
+?>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel = "stylesheet" href="login.css">
+</head>
+<body class="contact-body">
+  <div class="contact-section" >
+    <div class="contact-text">
+      <h1>Log In</h1>
+      <p>Welcome to UOK Hackers</p>
+    </div>
+    <div class="container">
+      <form action="/computer-club/includes/login.inc.php" method="post">
+    
+        <label for="username">Username</label>
+        <input type="text" id="email" name="uid" placeholder="Your email..">
+    
+        <label for="Password">Password</label>
+        <input type="password" id="password" name="pwd" placeholder="Enter Password">
+        <button name="submit" type="submit">Log In</button>
+      </form>
+    <div style="margin-top: 15px;">  New member ? <a href="/computer-club/signup.php">Sign Up</a></div>
+    </div>
+  </div>
+  <script src="index.js"></script>
+
+</body>
+</html>

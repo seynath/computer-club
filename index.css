@@ -1,0 +1,439 @@
+*{
+  margin: 0;
+  padding: 0;
+
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+
+}
+body{
+  background-color: rgb(255, 255, 255);
+  font-family: 'Roboto', sans-serif;
+}
+
+
+
+.Header{
+  background-color: rgb(83, 0, 0);
+  height: 90px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 50px;
+  
+
+}
+.logo img{
+  height: 80px;
+}
+
+.menu{
+  display: flex;
+   
+}
+.menu-list{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  }
+.menu-list li a{
+  padding: 0 10px;
+  font-size: 20px;
+  font-weight: 700;
+  color: bisque;
+  cursor: pointer;
+}
+
+.toggle{
+  display: none;
+
+}
+
+.toggle-menu{
+  display: none;
+  /* display: flex; */
+  flex-direction: column;
+  
+  background-color: rgb(22, 0, 0);
+  position:absolute;
+  top: 90px;
+  right: 0px;
+height: 85vh;
+width: 400px;
+text-align: center;
+
+row-gap: 1px;
+
+}
+
+.toggle-menu li{
+  padding: 25px 0;
+  border: 1px solid rgb(255, 255, 255);
+  cursor: pointer;
+  font-size: 25px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+/* hero */
+.hero{
+  background-image: url("images/lab.jpeg");
+  background-size: cover;
+  background-position: center;
+  height: 678px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-repeat: no-repeat;
+  align-items: center;
+  
+}
+
+.hero-text{
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+padding: 0 20px;
+color: bisque;
+}
+
+
+.hero-text h1{
+  font-size: 40px;
+  font-weight: 800;
+
+}
+.hero-text p{
+  padding-top: 20px;
+  width: 60%;
+}
+
+.form-section{
+  background-color: rgb(49, 0, 0);
+  height: auto;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  }
+  .form-section h1{
+    color: bisque;
+    font-size: 40px;
+    font-weight: 800;
+    margin-top: 25px;
+  }
+
+.form {
+border: 3px solid bisque;
+padding: 30px;
+border-radius: 20px;
+width: 50%;
+margin-bottom: 50px;
+margin-top: 25px;
+}
+.form div{
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+  padding: 10px 0;
+}
+.submit-button{
+  margin-top: 10px;
+}
+.form label{
+  font-size: 20px;
+  font-weight: 700;
+  color: bisque;
+}
+.form input{
+  cursor:pointer;
+  padding: 5px;
+  border: 2px solid black;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 500;
+  color: rgb(0, 0, 0);
+  background-color: bisque;
+}
+
+.loginBtn a{
+  padding: 10px 20px;
+  background-color: rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  font-weight: 700;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+
+
+
+/* footer */
+
+
+.footer{
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: auto;
+  background-color: #530000;
+  width: 100%;
+  padding: 50px 0px;
+  
+}
+
+.footer-logo-sec{
+  row-gap: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+}
+.footer-logo-sec h2, p{
+  color: bisque;
+}
+
+.footer-link-sec{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: left;
+  row-gap: 10px;  
+}
+.footer-link-sec h2, p, ul li a{
+  color: bisque;
+
+}
+.footer-link-sec ul li{
+  list-style: none;
+  margin: 10px 0px;
+}
+.footer-link-sec ul li a{
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  row-gap: 10px;
+}
+
+.footer-bottom{
+  background-color: #470000;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-bottom-text{
+  color: aliceblue;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 20px 0px;
+  text-align: center;
+}
+
+@media screen and (max-width: 1024px){
+  .toggle{
+    display: block;
+    cursor: pointer;
+    
+  }
+  .toggle img{
+    height: 40px;
+  }
+  .item, .itemButton, .item2Button{
+    display: none;
+
+  }
+  .loginBtn{
+ 
+ padding: 0px 20px; }
+}
+
+
+@media screen and (max-width: 768px){
+
+  .hero-text h1{
+    font-size: 30px;
+    font-weight: 800;
+  
+  }
+  .hero-text p{
+    width: 80%;
+    font-size: 15px;
+  }
+  .logo img{
+    height: 60px;
+    
+  }
+  .Header{
+    height: 80px;
+  }
+
+  .form {
+    border: 2px solid bisque;
+    padding: 30px;
+    border-radius: 20px;
+    width: 70%;
+    margin-bottom: 50px;
+    margin-top: 25px;
+    }
+    .form div{
+      display: flex;
+      flex-direction: column;
+      margin: 10px 0;
+      padding: 10px 0;
+    }
+
+    .form-section h1{
+      color: bisque;
+      font-size: 35px;
+      font-weight: 700;
+      margin-top: 25px;
+    }
+    .footer-logo-sec img{
+      width: 200px;
+
+    }
+
+    .footer-logo-sec h2{
+      font-size: 20px;
+    }
+    .footer-logo-sec p{
+      font-size: 15px;
+    }
+
+    .footer-link-sec h2{
+      font-size: 20px;
+    }
+    .footer-link-sec ul li a{
+      font-size: 15px;
+    }
+
+    .footer-bottom-text{
+      font-size: 12px;
+    }
+
+}
+
+
+@media screen and (max-width: 480px){
+
+  .toggle img{
+    height: 30px;
+  }
+
+
+  
+    .footer{
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: left;
+      height: auto;
+      background-color: #530000;
+      width: 100%;
+      padding: 50px 0px;
+      
+    }
+
+    .footer-link-sec{
+      padding-bottom: 30px;
+      order: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      align-items: center;
+      row-gap: 10px;  
+    }
+    .footer-logo-sec{
+      order: 2;
+    }
+
+    .form-section{
+      background-color: rgb(49, 0, 0);
+      height: auto;
+      display:flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      }
+      .form-section h1{
+        color: bisque;
+        font-size: 20px;
+        font-weight: 800;
+        margin-top: 25px;
+      }
+    
+    .form {
+    border: 3px solid bisque;
+    padding: 30px;
+    border-radius: 20px;
+    width: 80%;
+    margin-bottom: 50px;
+    margin-top: 25px;
+    }
+    .form div{
+      display: flex;
+      flex-direction: column;
+      margin: 5px 0;
+      padding: 5px 0;
+    }
+
+
+    .hero-text{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      padding: 0 20px;
+      color: bisque;
+      }
+      .hero-text h1{
+        font-size: 25px;
+        font-weight: 800;
+      
+      }
+      .hero-text p{
+        width: 60%;
+        font-size: 15px;
+      }
+
+      .form label{
+        font-size: 15px;
+        font-weight: 700;
+        color: bisque;
+      }
+      .form input{
+        font-size: 12px;
+      }
+
+}
+
+@media  screen and (max-width: 320px) {
+  
+  .logo img{
+    height: 40px;
+    
+  }
+  .logo{
+   align-items: center; 
+   justify-content: center;
+
+  
+  }
+
+  .Header{
+    height: 50px;
+    justify-content: space-between;
+    padding: 5px 20px;
+  }
+}
